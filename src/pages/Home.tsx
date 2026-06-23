@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BookOpen, Coffee, Hammer, Clock, KeyRound, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Layout } from "../components/Layout";
-import heroBg from "../assets/heroimg.png";
+import heroBg from "../assets/heroimg.jpg";
 const treasuresBg = "/assets/treasures-books-Ccnu8zIR.webp";
 const cafeBg = "/assets/cafe-coffee-DZK01GkV.jpg";
 

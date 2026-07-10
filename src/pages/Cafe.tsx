@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/ui/Button";
 import { Layout } from "../components/Layout";
-
-const cafeBg = "/assets/cafe-coffee-DZK01GkV.jpg";
+import cafeBg from "../assets/coffee.png";
 
 const menuCategories = [
   {
     name: "Coffee",
     items: [
-      { name: "Cebu Barako Espresso", price: "₱120", description: "Bold local beans, single origin" },
+      { name: "Negros Barako Espresso", price: "₱120", description: "Bold local beans, single origin" },
       { name: "Café Americano", price: "₱100", description: "Double shot espresso with hot water" },
       { name: "Flat White", price: "₱140", description: "Velvety microfoam with ristretto" },
       { name: "Pour Over", price: "₱160", description: "Hand-brewed single origin" },
@@ -75,22 +74,22 @@ export const Cafe = () => {
                 Crafted with Care
               </h2>
               <p className="text-muted-foreground text-lg leading-[1.6] mb-6">
-                Our café celebrates the rich coffee heritage of the Philippines. We source our beans from small farms across Cebu and the Cordilleras, roasted locally to bring out their unique character.
+                Our café celebrates the rich coffee heritage of the Philippines. We source our beans from small farms across Negros and the Cordilleras, roasted locally to bring out their unique character.
               </p>
               <p className="text-muted-foreground text-lg leading-[1.6] mb-8">
                 Pair your brew with our selection of Filipino-inspired pastries, all baked fresh daily. Whether you're deep in a novel or catching up with friends, our café is your home away from home.
               </p>
               <div className="flex gap-4">
                 <div className="p-4 bg-card rounded-lg border border-border text-center flex-1">
-                  <span className="text-2xl font-display font-bold text-accent">
+                  <span className="text-2xl font-display font-bold text-primary">
                     Local
                   </span>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Cebu Beans
+                    Negros Beans
                   </p>
                 </div>
                 <div className="p-4 bg-card rounded-lg border border-border text-center flex-1">
-                  <span className="text-2xl font-display font-bold text-accent">
+                  <span className="text-2xl font-display font-bold text-primary">
                     Fresh
                   </span>
                   <p className="text-sm text-muted-foreground mt-1">

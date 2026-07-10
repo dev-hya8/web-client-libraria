@@ -15,7 +15,7 @@ import { Layout } from "../components/Layout";
 const faqs = [
   {
     question: "What are your opening hours?",
-    answer: "We're open Monday through Sunday, 10:00 AM to 7:00 PM.",
+    answer: "We're open Monday through Friday from 11:00 AM to 7:00 PM, and Saturday and Sunday from 11:00 AM to 6:00 PM.",
   },
   {
     question: "Can I sell my old books to you?",
@@ -193,7 +193,7 @@ export const Contact = () => {
                       Address
                     </h3>
                     <p className="text-muted-foreground">
-                      IT Park, Cebu City, Philippines
+                      Dumaguete City, Philippines
                     </p>
                   </div>
                 </div>
@@ -213,7 +213,7 @@ export const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
                     <p className="text-muted-foreground">
-                      hiddenlibrarycebu@gmail.com
+                      librariabooks@gmail.com
                     </p>
                   </div>
                 </div>
@@ -223,9 +223,10 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Hours</h3>
-                    <p className="text-muted-foreground">
-                      Monday - Sunday: 10:00 AM - 7:00 PM
-                    </p>
+                    <div className="text-muted-foreground">
+                      <p>Monday - Friday: 11:00 AM - 7:00 PM</p>
+                      <p>Saturday - Sunday: 11:00 AM - 6:00 PM</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -274,18 +275,18 @@ export const Contact = () => {
               We'd Love to Meet You
             </h2>
             <p className="text-cream/70 text-lg leading-[1.6] mb-10">
-              Come discover the magic of Hidden Library Cebu. Your next literary adventure awaits.
+              Come discover the magic of Libraria Books. Your next literary adventure awaits.
             </p>
             <div className="aspect-video rounded-lg overflow-hidden bg-card border border-cream/20 mb-10">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.0!2d123.9!3d10.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDE5JzQ4LjAiTiAxMjPCsDU0JzAwLjAiRQ!5e0!3m2!1sen!2sph!4v1&q=IT+Park,+Cebu+City,+Philippines"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62997.31466678954!2d123.24969615814284!3d9.303806996237526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab6f392de360b7%3A0x2d6945df4760769!2sDumaguete+City%2C+Negros+Oriental!5e0!3m2!1sen!2sph!4v1511747012426"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Hidden Library Cebu Location"
+                title="Libraria Books Location"
               />
             </div>
             <div className="flex flex-wrap gap-4 justify-center">

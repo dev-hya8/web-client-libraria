@@ -13,7 +13,7 @@ export const Footer = () => {
               <li className="flex items-start gap-3 text-sm">
                 <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-cream/70">
-                  IT Park, Cebu City, Philippines
+                  Dumaguete City, Philippines
                 </span>
               </li>
               <li className="flex items-center gap-3 text-sm">
@@ -23,13 +23,14 @@ export const Footer = () => {
               <li className="flex items-center gap-3 text-sm">
                 <Mail className="w-5 h-5 text-accent shrink-0" />
                 <span className="text-cream/70">
-                  hiddenlibrarycebu@gmail.com
+                  librariabooks@gmail.com
                 </span>
               </li>
               <li className="flex items-start gap-3 text-sm">
                 <Clock className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-cream/70">
-                  Mon-Sun: 10:00 AM - 7:00 PM
+                  Mon-Fri: 11:00 AM - 7:00 PM<br />
+                  Sat-Sun: 11:00 AM - 6:00 PM
                 </span>
               </li>
             </ul>
@@ -55,7 +56,7 @@ export const Footer = () => {
         </div>
         <div className="mt-12 pt-8 border-t border-cream/10 text-center">
           <p className="text-cream/50 text-sm">
-            © {new Date().getFullYear()} Hidden Library Cebu. All rights reserved.
+            © {new Date().getFullYear()} Libraria Books. All rights reserved.
           </p>
         </div>
       </div>

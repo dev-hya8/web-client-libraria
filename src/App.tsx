@@ -7,7 +7,6 @@ import { Toaster as ShadcnToaster } from "./components/ui/toaster";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Cafe from "./pages/Cafe";
-import Collection from "./pages/Collection";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -48,7 +47,6 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/cafe" element={<Cafe />} />
-            <Route path="/services" element={<Collection />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

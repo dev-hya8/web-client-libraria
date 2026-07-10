@@ -39,7 +39,7 @@ export const About = () => {
               Our Story
             </span>
             <h1 className="font-headline text-5xl md:text-6xl font-bold text-cream mb-6">
-              About Hidden Library
+              About Libraria Books
             </h1>
             <p className="text-cream/70 text-lg leading-[1.6] max-w-xl">
               Born from a love of forgotten stories and a passion for preserving literary heritage.
@@ -58,13 +58,13 @@ export const About = () => {
               </h2>
               <div className="space-y-6 text-muted-foreground text-lg leading-[1.6]">
                 <p>
-                  Hidden Library Cebu began as a dream shared by two Cebuano book lovers who believed that every forgotten book deserves a second chance at finding its reader.
+                  Libraria Books began as a dream shared by two Dumagueteño book lovers who believed that every forgotten book deserves a second chance at finding its reader.
                 </p>
                 <p>
                   What started as a small collection of rescued books from estate sales and closing libraries has grown into a sanctuary for rare and vintage literature. Our mission is simple: to preserve stories that might otherwise be lost to time.
                 </p>
                 <p>
-                  We specialize in Visayan and Filipino literature, believing deeply in the importance of preserving our cultural heritage through the written word. But our shelves also hold treasures from around the world — each with its own journey to our little corner of Cebu.
+                  We specialize in Visayan and Filipino literature, believing deeply in the importance of preserving our cultural heritage through the written word. But our shelves also hold treasures from around the world — each with its own journey to our little corner of Dumaguete.
                 </p>
               </div>
             </div>
@@ -139,7 +139,7 @@ export const About = () => {
               Come Visit Us
             </h2>
             <p className="text-muted-foreground text-lg leading-[1.6] mb-10">
-              We'd love to welcome you to Hidden Library Cebu. Discover our collection, enjoy a cup of coffee, and find your next literary adventure.
+              We'd love to welcome you to Libraria Books. Discover our collection, enjoy a cup of coffee, and find your next literary adventure.
             </p>
             <Button variant="gold" size="lg" asChild>
               <Link to="/contact">Get Directions</Link>

@@ -3,14 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/Button";
 import { cn } from "../lib/utils";
-
-const logoUrl = "/assets/hidden-library-logo-6aHW7xqD.png";
+import logoUrl from "../assets/Libraria Logo.jpg";
 
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "The Café", path: "/cafe" },
-  { name: "Collection", path: "/services" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -45,16 +43,16 @@ export const Header = () => {
           <div className="relative">
             <img
               src={logoUrl}
-              alt="Hidden Library Cebu"
+              alt="Libraria Books"
               className="w-10 h-10 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
             />
           </div>
           <div className="flex flex-col items-center">
             <span className="font-headline text-xl font-semibold text-cream leading-tight">
-              Hidden Library
+              Libraria
             </span>
             <span className="text-xs text-cream/70 tracking-widest uppercase">
-              Cebu
+              Books
             </span>
           </div>
         </Link>

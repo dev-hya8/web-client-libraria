@@ -5,10 +5,10 @@ import { Layout } from "../components/Layout";
 import heroBg from "../assets/heroimg.jpg";
 import treasuresBg from "../assets/Treasure.png";
 import cafeBg from "../assets/coffee.png";
-import rareIcon from "../assets/icon_rare_collections.png";
-import cafeIcon from "../assets/icon_cafe.png";
-import restorationIcon from "../assets/icon_restoration.png";
-import loungeIcon from "../assets/icon_lounge.png";
+import rareIcon from "../assets/rare book collections.png";
+import cafeIcon from "../assets/Literary cafe.png";
+import eventIcon from "../assets/Book event.png";
+import loungeIcon from "../assets/Reading lounge.png";
 
 const features = [
   {
@@ -22,9 +22,9 @@ const features = [
     description: "Enjoy artisan coffee and Filipino pastries while lost in your favorite stories.",
   },
   {
-    icon: restorationIcon,
-    title: "Book Restoration",
-    description: "Expert restoration services to preserve your treasured books for generations.",
+    icon: eventIcon,
+    title: "Community Events",
+    description: "Join us for intimate book launches, poetry readings, and creative workshops in the heart of Dumaguete.",
   },
   {
     icon: loungeIcon,
@@ -62,7 +62,7 @@ export const Home = () => {
               Libraria Books
             </h1>
             <p className="text-lg md:text-[1.125rem] text-cream/80 mb-14 max-w-[58ch] leading-[1.6] animate-fade-in [animation-delay:0.6s] [animation-fill-mode:both]">
-              A utopia for new books, culture, and journals. Your portal to another world of your choosing.
+              A utopia for new books, culture, and journals. Your portal to another world.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in [animation-delay:0.8s] [animation-fill-mode:both]">
               <Button variant="hero" size="xl" asChild>
@@ -154,7 +154,7 @@ export const Home = () => {
                   </li>
                 ))}
               </ul>
-              <Button variant="gold" size="lg" asChild>
+              <Button variant="heroOutline" size="lg" asChild>
                 <Link to="/about" className="gap-2">
                   Read Our Story <ArrowRight className="w-4 h-4" />
                 </Link>

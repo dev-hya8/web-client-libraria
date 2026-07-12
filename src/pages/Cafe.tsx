@@ -79,8 +79,8 @@ export const Cafe = () => {
               <p className="text-muted-foreground text-lg leading-[1.6] mb-8">
                 Pair your brew with our selection of Filipino-inspired pastries, all baked fresh daily. Whether you're deep in a novel or catching up with friends, our café is your home away from home.
               </p>
-              <div className="flex gap-4">
-                <div className="p-4 bg-card rounded-lg border border-border text-center flex-1">
+              <div className="grid grid-cols-2 gap-6 mt-8">
+                <div className="py-2">
                   <span className="text-2xl font-display font-bold text-primary">
                     Local
                   </span>
@@ -88,7 +88,7 @@ export const Cafe = () => {
                     Negros Beans
                   </p>
                 </div>
-                <div className="p-4 bg-card rounded-lg border border-border text-center flex-1">
+                <div className="py-2">
                   <span className="text-2xl font-display font-bold text-primary">
                     Fresh
                   </span>
@@ -146,16 +146,16 @@ export const Cafe = () => {
       </section>
 
       {/* Promo Section */}
-      <section className="py-16 bg-accent">
+      <section className="py-16 bg-[#E9AF3A] text-white">
         <div className="container mx-auto">
           <div className="max-w-2xl">
-            <span className="font-sans text-accent-foreground/70 text-xs md:text-sm font-semibold tracking-[0.25em] uppercase mb-2 block">
+            <span className="font-sans text-white/75 text-xs md:text-sm font-semibold tracking-[0.25em] uppercase mb-2 block">
               Special Offer
             </span>
-            <h3 className="font-headline text-3xl font-bold text-accent-foreground mb-4">
+            <h3 className="font-headline text-3xl font-bold text-white mb-4">
               Book & Brew Combo
             </h3>
-            <p className="text-accent-foreground/80 text-lg leading-[1.6]">
+            <p className="text-white/90 text-lg leading-[1.6]">
               Purchase any book and get 20% off your coffee order. Because the best stories deserve the best brews.
             </p>
           </div>
@@ -170,10 +170,12 @@ export const Cafe = () => {
               Join Us for a Cup
             </h2>
             <p className="text-muted-foreground text-lg leading-[1.6] mb-10">
-              Open Tuesday through Sunday, 10 AM to 8 PM. We look forward to serving you.
+              Open Monday through Sunday. We look forward to serving you.
             </p>
             <Button variant="gold" size="lg" asChild>
-              <Link to="/contact">Get Directions</Link>
+              <a href="https://www.instagram.com/libraria.ph/?hl=en" target="_blank" rel="noopener noreferrer">
+                Get Directions
+              </a>
             </Button>
           </div>
         </div>

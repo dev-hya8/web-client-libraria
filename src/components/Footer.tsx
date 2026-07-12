@@ -13,12 +13,12 @@ export const Footer = () => {
               <li className="flex items-start gap-3 text-sm">
                 <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-cream/70">
-                  Dumaguete City, Philippines
+                  Arts + Design Collective Dumaguete (ADCD), 58 E J. Blanco Dr, Piapi, Dumaguete City, Philippines
                 </span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-cream/70">(032) 503 6154</span>
+                <span className="text-cream/70">09123456789</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Mail className="w-5 h-5 text-accent shrink-0" />
@@ -42,7 +42,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               {[
                 "Library Subscription",
-                "Book Restoration",
+                "Community Events",
                 "Rare Book Sourcing",
                 "Café & Reading Room",
                 "Private Events",

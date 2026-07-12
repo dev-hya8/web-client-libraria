@@ -71,7 +71,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ["var(--font-display)", "Playfair Display", "Georgia", "serif"],
+        display: ["var(--font-display)", "EB Garamond", "Georgia", "serif"],
         headline: ["var(--font-headline)", "Fraunces", "Georgia", "serif"],
         sans: ["var(--font-sans)", "Montserrat", "system-ui", "sans-serif"],
         body: ["var(--font-body)", "Source Sans 3", "system-ui", "sans-serif"],

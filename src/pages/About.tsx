@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Heart, Users, Award } from "lucide-react";
+import { Heart, Users, Award } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Layout } from "../components/Layout";
+import beginningPhoto1 from "../assets/card 1 beginning.png";
+import beginningPhoto2 from "../assets/Card 2 new.png";
 
 const values = [
   {
@@ -23,7 +25,7 @@ const values = [
 
 const stats = [
   { number: "500+", label: "Rare Books" },
-  { number: "2019", label: "Founded" },
+  { number: "2020", label: "Founded" },
   { number: "1000+", label: "Happy Readers" },
   { number: "50+", label: "Events Hosted" },
 ];
@@ -58,26 +60,30 @@ export const About = () => {
               </h2>
               <div className="space-y-6 text-muted-foreground text-lg leading-[1.6]">
                 <p>
-                  Libraria Books began as a dream shared by two Dumagueteño book lovers who believed that every forgotten book deserves a second chance at finding its reader.
+                  Libraria Books began in August 2020 during the pandemic, when Gayle Acar, a former musician, stylist, and graphic designer, started selling her children’s books on Instagram. What began as a way to pass the time while navigating lockdown isolation quickly evolved into a visual sanctuary for readers as Gayle discovered her passion for curating and photographing beautiful titles.
                 </p>
                 <p>
-                  What started as a small collection of rescued books from estate sales and closing libraries has grown into a sanctuary for rare and vintage literature. Our mission is simple: to preserve stories that might otherwise be lost to time.
+                  As her online community grew, the desire for deeper real-world connections led Gayle and her husband Ernest to move from Manila to Dumaguete, opening a physical "hidden bookshop" at 58 EJ Blanco in December 2022.
                 </p>
                 <p>
-                  We specialize in Visayan and Filipino literature, believing deeply in the importance of preserving our cultural heritage through the written word. But our shelves also hold treasures from around the world — each with its own journey to our little corner of Dumaguete.
+                  Today, Libraria serves as an intentional bridge between the online and offline worlds, dedicated to supporting Filipino literature, homeschooling families, and the vibrant community of Dumaguete writers and artists.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="aspect-[3/4] bg-card rounded-lg overflow-hidden shadow-card">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <BookOpen className="w-16 h-16 text-primary/40" />
-                </div>
+                <img
+                  src={beginningPhoto2}
+                  alt="Beautiful curated books on display"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="aspect-[3/4] bg-card rounded-lg overflow-hidden shadow-card mt-8">
-                <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                  <Heart className="w-16 h-16 text-accent/40" />
-                </div>
+                <img
+                  src={beginningPhoto1}
+                  alt="Libraria Books storefront"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -98,8 +104,8 @@ export const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((val) => (
               <div key={val.title} className="p-8">
-                <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6">
-                  <val.icon className="w-7 h-7 text-accent" />
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <val.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="font-headline text-xl font-semibold text-foreground mb-4">
                   {val.title}
@@ -142,7 +148,9 @@ export const About = () => {
               We'd love to welcome you to Libraria Books. Discover our collection, enjoy a cup of coffee, and find your next literary adventure.
             </p>
             <Button variant="gold" size="lg" asChild>
-              <Link to="/contact">Get Directions</Link>
+              <a href="https://www.instagram.com/libraria.ph/?hl=en" target="_blank" rel="noopener noreferrer">
+                Get Directions
+              </a>
             </Button>
           </div>
         </div>

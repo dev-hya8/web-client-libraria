@@ -183,50 +183,107 @@ export const Contact = () => {
               <h2 className="font-headline text-3xl font-bold text-foreground mb-8">
                 Visit Our Store
               </h2>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-accent" />
+              <div className="space-y-8">
+                <a
+                  href="https://maps.google.com/?q=58+E+J.+Blanco+Dr,+Piapi,+Dumaguete+City,+Negros+Oriental,+Philippines"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/item block focus:outline-none focus:ring-2 focus:ring-accent rounded-lg -m-2 p-2 transition-all duration-300"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover/item:bg-accent/20 transition-colors duration-300">
+                      <MapPin className="w-5 h-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover/item:text-accent transition-colors duration-300">
+                        Address
+                      </h3>
+                      <p className="text-muted-foreground text-lg leading-relaxed group-hover/item:text-foreground transition-colors duration-300">
+                        Arts + Design Collective Dumaguete (ADCD), 58 E J. Blanco Dr, Piapi, Dumaguete City, Philippines
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">
-                      Address
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Dumaguete City, Philippines
-                    </p>
+                </a>
+
+                <a
+                  href="tel:09123456789"
+                  className="group/item block focus:outline-none focus:ring-2 focus:ring-accent rounded-lg -m-2 p-2 transition-all duration-300"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover/item:bg-accent/20 transition-colors duration-300">
+                      <Phone className="w-5 h-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover/item:text-accent transition-colors duration-300">
+                        Phone
+                      </h3>
+                      <p className="text-muted-foreground text-lg leading-relaxed group-hover/item:text-foreground transition-colors duration-300 font-semibold tracking-wide">
+                        0912 345 6789
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-accent" />
+                </a>
+
+                <a
+                  href="mailto:librariabooks@gmail.com"
+                  className="group/item block focus:outline-none focus:ring-2 focus:ring-accent rounded-lg -m-2 p-2 transition-all duration-300"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover/item:bg-accent/20 transition-colors duration-300">
+                      <Mail className="w-5 h-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover/item:text-accent transition-colors duration-300">
+                        Email
+                      </h3>
+                      <p className="text-muted-foreground text-lg leading-relaxed group-hover/item:text-foreground transition-colors duration-300">
+                        librariabooks@gmail.com
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                    <p className="text-muted-foreground">(032) 503 6154</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-accent" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <p className="text-muted-foreground">
-                      librariabooks@gmail.com
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
+                </a>
+
+                <div className="flex items-start gap-4 -m-2 p-2">
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
                     <Clock className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Hours</h3>
-                    <div className="text-muted-foreground">
+                    <div className="text-muted-foreground text-lg leading-relaxed">
                       <p>Monday - Friday: 11:00 AM - 7:00 PM</p>
                       <p>Saturday - Sunday: 11:00 AM - 6:00 PM</p>
                     </div>
+                  </div>
+                </div>
+
+                <div className="pt-8 border-t border-border mt-8 -m-2 p-2">
+                  <h3 className="font-semibold text-foreground mb-4">Follow Us</h3>
+                  <div className="flex gap-4">
+                    <a
+                      href="https://www.instagram.com/libraria.ph/?hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 rounded-full bg-accent/10 hover:bg-accent/20 flex items-center justify-center text-accent transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent"
+                      aria-label="Instagram"
+                    >
+                      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/Libraria.Ph/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 rounded-full bg-accent/10 hover:bg-accent/20 flex items-center justify-center text-accent transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-accent"
+                      aria-label="Facebook"
+                    >
+                      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                      </svg>
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -279,7 +336,7 @@ export const Contact = () => {
             </p>
             <div className="aspect-video rounded-lg overflow-hidden bg-card border border-cream/20 mb-10">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62997.31466678954!2d123.24969615814284!3d9.303806996237526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab6f392de360b7%3A0x2d6945df4760769!2sDumaguete+City%2C+Negros+Oriental!5e0!3m2!1sen!2sph!4v1511747012426"
+                src="https://maps.google.com/maps?q=58%20E%20J.%20Blanco%20Dr,%20Piapi,%20Dumaguete%20City,%20Negros%20Oriental,%20Philippines&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -290,11 +347,15 @@ export const Contact = () => {
               />
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button variant="gold" size="lg">
-                Get Directions
+              <Button variant="gold" size="lg" asChild>
+                <a href="https://www.instagram.com/libraria.ph/?hl=en" target="_blank" rel="noopener noreferrer">
+                  Get Directions
+                </a>
               </Button>
-              <Button variant="heroOutline" size="lg">
-                Call Us
+              <Button variant="heroOutline" size="lg" asChild>
+                <a href="tel:09123456789">
+                  Call Us
+                </a>
               </Button>
             </div>
           </div>

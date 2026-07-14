@@ -57,7 +57,7 @@ export const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you within 24-48 hours.",
+      description: "Form active upon deployment. Contact us at hyacinthbalina@gmail.com for immediate inquiries.",
     });
     setFormData({
       name: "",

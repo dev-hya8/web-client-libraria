@@ -33,8 +33,8 @@ export const Header = () => {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        scrolled
-          ? "bg-primary/95 backdrop-blur-md shadow-soft py-3"
+        (scrolled || mobileMenuOpen)
+          ? "bg-forest shadow-soft py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -93,7 +93,7 @@ export const Header = () => {
       </div>
       <div
         className={cn(
-          "md:hidden absolute top-full left-0 right-0 bg-primary/98 backdrop-blur-md transition-all duration-300 overflow-hidden",
+          "md:hidden absolute top-full left-0 right-0 bg-forest transition-all duration-300 overflow-hidden",
           mobileMenuOpen ? "max-h-96 border-b border-cream/10" : "max-h-0"
         )}
       >

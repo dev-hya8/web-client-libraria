@@ -336,7 +336,7 @@ export const Contact = () => {
             </p>
             <div className="aspect-video rounded-lg overflow-hidden bg-card border border-cream/20 mb-10">
               <iframe
-                src="https://maps.google.com/maps?q=58%20E%20J.%20Blanco%20Dr,%20Piapi,%20Dumaguete%20City,%20Negros%20Oriental,%20Philippines&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Arts%20%2B%20Design%20Collective%20Dumaguete,%2058%20E%20J.%20Blanco%20Dr,%20Piapi,%20Dumaguete%20City,%20Negros%20Oriental,%20Philippines&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

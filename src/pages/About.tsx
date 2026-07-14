@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { Heart, Users, Award } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Layout } from "../components/Layout";

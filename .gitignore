@@ -28,3 +28,9 @@ dist-ssr
 .npm/
 .gemini/
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
+

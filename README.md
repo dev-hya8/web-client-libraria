@@ -6,9 +6,11 @@ This project is a high-performance web interface designed to capture the essence
 
 ## Tech Stack
 - **Framework:** React 19
+- **Routing:** React Router v7
+- **Data Fetching & State:** TanStack React Query v5
 - **Language:** TypeScript
 - **Build Tool:** Vite
-- **Styling:** Tailwind CSS
+- **Styling:** Tailwind CSS (with Radix UI primitives & Sonner for notifications)
 - **Architecture:** Component-driven design, optimized for rapid iteration.
 
 ## Getting Started

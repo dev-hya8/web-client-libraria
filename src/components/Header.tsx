@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/Button";
 import { cn } from "../lib/utils";
-import logoUrl from "../assets/Libraria Logo.jpg";
+import logoUrl from "../assets/logo.webp";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -44,6 +44,8 @@ export const Header = () => {
             <img
               src={logoUrl}
               alt="Libraria Books"
+              width={40}
+              height={40}
               className="w-10 h-10 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
             />
           </div>

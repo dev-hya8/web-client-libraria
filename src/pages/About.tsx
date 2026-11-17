@@ -2,8 +2,8 @@
 import { Heart, Users, Award } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Layout } from "../components/Layout";
-import beginningPhoto1 from "../assets/card 1 beginning.png";
-import beginningPhoto2 from "../assets/Card 2 new.png";
+import beginningPhoto1 from "../assets/beginning-1.webp";
+import beginningPhoto2 from "../assets/beginning-2.webp";
 
 const values = [
   {
@@ -75,6 +75,10 @@ export const About = () => {
                 <img
                   src={beginningPhoto2}
                   alt="Beautiful curated books on display"
+                  width={800}
+                  height={1000}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -82,6 +86,10 @@ export const About = () => {
                 <img
                   src={beginningPhoto1}
                   alt="Libraria Books storefront"
+                  width={800}
+                  height={1000}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>

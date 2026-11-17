@@ -2,13 +2,17 @@ import { Link } from "react-router-dom";
 import { KeyRound, ArrowRight } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Layout } from "../components/Layout";
-import heroBg from "../assets/heroimg.jpg";
-import treasuresBg from "../assets/Treasure.png";
-import cafeBg from "../assets/coffee.png";
-import rareIcon from "../assets/rare book collections.png";
-import cafeIcon from "../assets/Literary cafe.png";
-import eventIcon from "../assets/Book event.png";
-import loungeIcon from "../assets/Reading lounge.png";
+import heroBg1400 from "../assets/hero-1400.webp";
+import heroBg768 from "../assets/hero-768.webp";
+import heroBgFallback from "../assets/heroimg.jpg";
+import treasuresBg900 from "../assets/treasure-900.webp";
+import treasuresBg500 from "../assets/treasure-500.webp";
+import cafeBg800 from "../assets/coffee-800.webp";
+import cafeBg450 from "../assets/coffee-450.webp";
+import rareIcon from "../assets/icon-rare-books.webp";
+import cafeIcon from "../assets/icon-cafe.webp";
+import eventIcon from "../assets/icon-events.webp";
+import loungeIcon from "../assets/icon-lounge.webp";
 
 const features = [
   {
@@ -39,11 +43,27 @@ export const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
-          <img
-            src={heroBg}
-            alt="Cozy vintage bookstore interior"
-            className="w-full h-full object-cover"
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcSet={heroBg768}
+              type="image/webp"
+            />
+            <source
+              srcSet={heroBg1400}
+              type="image/webp"
+            />
+            <img
+              src={heroBgFallback}
+              alt="Cozy vintage bookstore interior"
+              width={1400}
+              height={788}
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
           <div className="absolute inset-x-0 top-0 h-[150px] bg-gradient-to-b from-black/60 to-transparent" />
         </div>
@@ -101,6 +121,10 @@ export const Home = () => {
                   <img
                     src={feature.icon}
                     alt={feature.title}
+                    width={80}
+                    height={80}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -121,11 +145,24 @@ export const Home = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-card">
-              <img
-                src={treasuresBg}
-                alt="Collection of classic literature and rare books"
-                className="w-full h-full object-cover"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet={treasuresBg500}
+                  type="image/webp"
+                />
+                <img
+                  src={treasuresBg900}
+                  srcSet={`${treasuresBg500} 500w, ${treasuresBg900} 900w`}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                  alt="Collection of classic literature and rare books"
+                  width={900}
+                  height={675}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
             </div>
             <div>
@@ -204,11 +241,24 @@ export const Home = () => {
             </div>
             <div className="order-1 lg:order-2">
               <div className="aspect-square rounded-lg overflow-hidden shadow-card">
-                <img
-                  src={cafeBg}
-                  alt="Artisan coffee with vintage books"
-                  className="w-full h-full object-cover"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 640px)"
+                    srcSet={cafeBg450}
+                    type="image/webp"
+                  />
+                  <img
+                    src={cafeBg800}
+                    srcSet={`${cafeBg450} 450w, ${cafeBg800} 800w`}
+                    sizes="(max-width: 640px) 100vw, 500px"
+                    alt="Artisan coffee with vintage books"
+                    width={800}
+                    height={800}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </picture>
               </div>
             </div>
           </div>

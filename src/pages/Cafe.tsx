@@ -1,7 +1,8 @@
 
 import { Button } from "../components/ui/Button";
 import { Layout } from "../components/Layout";
-import cafeBg from "../assets/coffee.png";
+import cafeBg800 from "../assets/coffee-800.webp";
+import cafeBg450 from "../assets/coffee-450.webp";
 
 const menuCategories = [
   {
@@ -63,11 +64,24 @@ export const Cafe = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-square rounded-lg overflow-hidden shadow-card">
-              <img
-                src={cafeBg}
-                alt="Artisan coffee with books"
-                className="w-full h-full object-cover"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet={cafeBg450}
+                  type="image/webp"
+                />
+                <img
+                  src={cafeBg800}
+                  srcSet={`${cafeBg450} 450w, ${cafeBg800} 800w`}
+                  sizes="(max-width: 640px) 100vw, 600px"
+                  alt="Artisan coffee with books"
+                  width={800}
+                  height={800}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
+              </picture>
             </div>
             <div>
               <h2 className="font-headline text-4xl font-bold text-foreground mb-6">
